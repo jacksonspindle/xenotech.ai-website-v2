@@ -22,7 +22,7 @@ export default function NavBar(){
             </div>
 
             <div>
-                <video src='./cryptovoxelsVideo.mp4'  width={"100%"} className='cryptovoxelsVideo' autoPlay loop muted  ></video>
+                <video src='./cryptovoxelsVideo.mp4'   className='cryptovoxelsVideo' autoPlay loop muted  ></video>
             </div>
                 
 
