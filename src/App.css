@@ -1,38 +1,320 @@
-.App {
-  text-align: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navList {
+  padding: 1.5em 7vw 0 0;
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.navList > li {
+  padding: 13px;
+  align-items: center;
+  color: #e88615;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.navList > li:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.xenotechIcon {
+  width: 67px;
+  margin-left: 9vw;
+  margin-top: 1vw;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.xenotechIcon:hover {
+  transform: scale(1.1);
+}
+
+.xenotechLogo {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.xenotechLogo > a > img {
+  width: 300px;
+  margin-top: 8vh;
+  transition: all 0.5s ease-in-out;
+}
+
+html {
+  background-color: black;
+}
+
+h1 {
+  color: #e88615;
+  text-align: center;
+  margin: 0%;
+}
+
+p {
+  padding: 0%;
+  margin: 0;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  /* margin: 3%; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: orange;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  /* outline: 1px solid orange; */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 8vh;
+  color: white;
+}
+
+.footer > nav > ul {
+  list-style: none;
+  padding: 0.2px;
+}
+.footer > nav > ul > li {
+  /* list-style: none; */
+  padding: 4px;
+}
+
+.landingPage {
+  display: grid;
+  justify-content: center;
+  font-size: 47px;
+}
+
+.landingPageVideos {
+  display: flex;
+  justify-content: center;
+  padding: 0 200px 0 200px;
+  width: 80%;
+}
+
+.landingPageVideos > video {
+  padding: 2vw;
+  width: 300px;
+  margin-bottom: 200px;
+}
+
+.landingPageCenterVideo {
+  min-width: 400px !important;
+}
+/* 
+.landingPageText {
+  display: flex;
+  justify-content: center;
+} */
+
+.videosContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.cryptovoxelsVideo {
+  width: 100%;
+  height: auto;
+}
+
+.metaverseLocationH1 {
+  position: absolute;
+  top: 110vh;
+  left: 2vw;
+  font-size: 80px;
+}
+
+.metaverseLocationP {
+  position: absolute;
+  top: 117vh;
+  left: 2vw;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.jumpInButton {
+  position: absolute;
+  top: 130vh;
+  left: 4%;
+  border-radius: 15px;
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  border: 2px solid #e88615;
+  color: #e88615;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.jumpInButton:hover {
+  background-color: #e88615;
+  color: black;
+}
+
+.socialMediaIconsContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  margin-right: 30px;
+  width: 100px;
+}
+
+.socialMediaIconsContainer > a {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  padding-top: 30px;
+  transition: all 2s ease-in-out;
+}
+
+.socialMediaIconsContainer > a > img:hover {
+  transform: scale(1.2);
+}
+
+.miniSocialMediaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.miniSocialMediaContainer > a {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  padding-top: 10px;
+}
+
+.miniSocialMediaContainer > a > img {
+  transition: all 0.1s ease-in-out;
+}
+.miniSocialMediaContainer > a > img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  /* .landingPageVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vw;
+    margin-bottom: 0px;
+    margin-top: 40px;
+  } */
+  .landingPageVideos {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .landingPageVideos > video {
+    margin-bottom: 100px;
+  }
+  .landingPageCenterVideo {
+    display: none;
+    /* width: 300px; */
+  }
+
+  .cryptovoxelsVideo {
+    width: 100%;
+  }
+
+  .socialMediaIconsContainer {
+    display: none;
+  }
+
+  .metaverseLocationText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .metaverseLocationH1 {
+    position: relative;
+    top: 0%;
+    left: 0;
+  }
+
+  .metaverseLocationP {
+    position: relative;
+
+    top: 0%;
+    left: 0;
+    inline-size: 70%;
+  }
+
+  .jumpInButton {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  h1 {
+    /* inline-size: 150px; */
+    font-size: 180%;
+  }
+
+  .landingPageText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPageText > p {
+    inline-size: 70%;
+    padding: 0%;
+
+    /* text-align: center; */
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .landingPageVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: left; */
+    grid-template-columns: 1fr;
+    padding: 1vw;
+    margin-bottom: none;
+  }
+
+  .landingPageVideos > video {
+    padding: 2vw;
+    width: 400px;
+    margin-bottom: 10px;
+  }
+
+  .landingPageCenterVideo {
+    display: block;
+    /* width: 300px; */
   }
 }
