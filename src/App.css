@@ -46,7 +46,6 @@ body {
 .xenotechLogo {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .xenotechLogo > a > img {
@@ -71,7 +70,6 @@ p {
   color: white;
   font-size: 28px;
   text-align: center;
-  /* margin: 3%; */
 }
 
 ::-webkit-scrollbar {
@@ -85,7 +83,6 @@ p {
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: black;
-  /* outline: 1px solid orange; */
 }
 
 .footer {
@@ -101,7 +98,6 @@ p {
   padding: 0.2px;
 }
 .footer > nav > ul > li {
-  /* list-style: none; */
   padding: 4px;
 }
 
@@ -114,7 +110,6 @@ p {
 .landingPageVideos {
   display: flex;
   justify-content: center;
-  /* padding: 0 200px 0 200px; */
   width: 80%;
 }
 
@@ -127,28 +122,15 @@ p {
 .landingPageCenterVideo {
   min-width: 400px !important;
 }
-/* 
-.landingPageText {
-  display: flex;
-  justify-content: center;
-} */
 
 .videosContainer {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .cryptovoxelsVideo {
-  /* display: block; */
-  /* position: relative; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  /* width: 100%; */
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
 }
 
 .metaverseLocationH1 {
@@ -230,13 +212,6 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* .landingPageVideos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1vw;
-    margin-bottom: 0px;
-    margin-top: 40px;
-  } */
   .landingPageVideos {
     display: flex;
     flex-direction: row;
@@ -253,7 +228,6 @@ p {
   }
   .landingPageCenterVideo {
     display: none;
-    /* width: 300px; */
   }
 
   .cryptovoxelsVideo {
@@ -292,7 +266,6 @@ p {
   }
 
   h1 {
-    /* inline-size: 150px; */
     font-size: 180%;
   }
 
@@ -306,8 +279,6 @@ p {
   .landingPageText > p {
     inline-size: 70%;
     padding: 0%;
-
-    /* text-align: center; */
   }
 }
 
@@ -316,7 +287,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: left; */
     grid-template-columns: 1fr;
     padding: 1vw;
     margin-bottom: none;
@@ -331,6 +301,5 @@ p {
 
   .landingPageCenterVideo {
     display: block;
-    /* width: 300px; */
   }
 }

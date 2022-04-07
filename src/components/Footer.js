@@ -7,7 +7,8 @@ import "../App.css"
 
 export default function Footer(){
     return (
-        <div className='footer'>
+       <div>
+       <div className='footer'>
             <nav>
                 <h1>Menu</h1>
                 <ul>
@@ -35,8 +36,14 @@ export default function Footer(){
             </ul>
             
             </nav>
+
+             
     
     </div>
+    <section style={{"text-align": "center","color": "white"}}>
+                  © 2022 Jackson Spindle · Powered by <a href="https://reactjs.org/">React</a>.
+             </section>
+</div>
     )
 }
 
